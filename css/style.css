@@ -1,0 +1,189 @@
+/**
+ * /* MIXI DECLARATION START
+ *
+ * @format
+ */
+/* transition transform START*/
+/* transition transform END*/
+/* START FONT FAMILIES*/
+/* END FONT FAMILIES*/
+/* MEDIA START*/
+/* MEDIA END*/
+@font-face {
+  font-family: "avenirBlack";
+  src: url("../Test-2021/fonts/avenir_ff/AvenirLTStd-Black.otf");
+}
+@font-face {
+  font-family: "avenirBook";
+  src: url("../Test-2021/fonts/avenir_ff/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: "avenirRoman";
+  src: url("../Test-2021/fonts/avenir_ff/AvenirLTStd-Roman.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+header {
+  background-color: #2b5382;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 479px) {
+  .container {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 959px) {
+  .container {
+    width: 1280px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .container {
+    width: 1500px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 1700px;
+  }
+}
+
+.box-picture {
+  padding-bottom: 30px;
+}
+.box-picture .product-bottom-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #464646;
+  font-family: "avenirRoman";
+  padding: 10px 20px 10px 0px;
+  letter-spacing: 0.04em;
+}
+
+nav .logo-link {
+  grid-column: 1/3;
+  align-items: center;
+  display: grid;
+}
+nav .logo-link .img-logo {
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+nav .logo-link .img-logo:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+nav .nav-links {
+  grid-column: 4/12;
+  font-size: 20px;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  padding: 0 15px;
+}
+nav .nav-links li {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: "avenirRoman";
+  font-weight: bold;
+}
+nav .nav-links li:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+nav .nav-links a {
+  color: #ffffff;
+}
+
+.banner-session {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  color: white;
+  text-align: center;
+  padding-top: 140px;
+  line-height: 40px;
+  background: url("../Test-2021/Assets/Hero-1.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 250px;
+}
+.banner-session .content {
+  z-index: 1;
+  position: relative;
+}
+
+.product-section .product-nav-wrapper .product-nav .product-header {
+  display: grid;
+  grid-column: 1/10;
+  align-items: center;
+  display: grid;
+  font-family: "avenirBook";
+  color: #2b5382;
+}
+.product-section .product-photos-article {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+}
+@media only screen and (min-width: 479px) {
+  .product-section .product-photos-article {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 959px) {
+  .product-section .product-photos-article {
+    width: 1280px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .product-section .product-photos-article {
+    width: 1500px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .product-section .product-photos-article {
+    width: 1700px;
+  }
+}
+.product-section .product-photos-article .product-picture .product-pic-size img {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

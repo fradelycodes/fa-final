@@ -1,0 +1,53 @@
+/**
+ * /* MIXI DECLARATION START
+ *
+ * @format
+ */
+
+/* transition transform START*/
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+@mixin transform($transform) {
+  transform: scale($transform);
+  -webkit-transform: scale($transform);
+  -moz-transform: scale($transform);
+  -ms-transform: scale($transform);
+  -o-transform: scale($transform);
+}
+/* transition transform END*/
+/* START FONT FAMILIES*/
+@mixin font-section-structure {
+  font-family: $font-avenir-roman;
+  font-size: 12px;
+  color: $black;
+  text-decoration: none;
+}
+/* END FONT FAMILIES*/
+@mixin grid-center-center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MEDIA START*/
+@mixin container-media {
+  @media only screen and (min-width: $tablet-break) {
+    width: 960px;
+  }
+  @media only screen and (min-width: $desktop-break) {
+    width: 1280px;
+  }
+  @media only screen and (min-width: $mid-break) {
+    width: 1500px;
+  }
+  @media only screen and (min-width: $wide-break) {
+    width: 1700px;
+  }
+}
+/* MEDIA END*/

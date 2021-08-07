@@ -1,0 +1,134 @@
+@import "_variables";
+@import "_mixins";
+@import "_fonts";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+header {
+  background-color: $lblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  @include container-media;
+}
+
+.box-picture {
+  padding-bottom: 30px;
+
+  .product-bottom-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: $grey;
+    font-family: $font-avenir-roman;
+    padding: 10px 20px 10px 0px;
+    letter-spacing: 0.04em;
+  }
+}
+
+nav {
+  .logo-link {
+    grid-column: 1/3;
+    align-items: center;
+    display: grid;
+    .img-logo {
+      @include transition(transform 0.3s ease-in-out);
+      &:hover {
+        @include transform(1.03);
+      }
+    }
+  }
+
+  .nav-links {
+    grid-column: 4/12;
+    font-size: 20px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    padding: 0 15px;
+
+    li {
+      @include grid-center-center;
+      font-family: $font-avenir-roman;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+        @include transform(1.04);
+        @include transition(transform 0.3s ease-in-out);
+      }
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+//MAIN BANNER START
+.banner-session {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  color: white;
+  text-align: center;
+  padding-top: 140px;
+  line-height: 40px;
+  background: url("../Test-2021/Assets/Hero-1.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 250px;
+
+  .content {
+    z-index: 1;
+    position: relative;
+  }
+}
+// MAIN BANNER END
+
+// PRODUCT TEAM START
+.product-section {
+  .product-nav-wrapper {
+    .product-nav {
+      .product-header {
+        display: grid;
+        grid-column: 1/10;
+        align-items: center;
+        display: grid;
+        font-family: $font-avenir-book;
+        color: $lblue;
+      }
+    }
+  }
+
+  // End of ticket-section
+  .product-photos-article {
+    @include container-media;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    .product-picture {
+      .product-pic-size {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+// PRODUCT TEAM END
